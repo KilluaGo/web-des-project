@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.list-items .icons a:first-child{
+  margin-left: 50px;
+}
+body {
+    font-family:Poppins;
+    background-color:#000000;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: #87CEEB;
+}
+
+/* mouse over link */
+a:hover {
+  color: orange;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background: #000000;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px white inset;
+}
+ h1
+{
+    color:#FFFFFF;
+    text-align: center;
+    font-size: 40px; 
+    margin-bottom: 30px; 
+}
+
+.wrapper .content ul {
+  line-height: 1.8;
+  list-style-type: none; 
+  color:#FFFFFF;
+  text-align: center;
+}
+
+.wrapper .title h2{
+  color:#FFFFFF;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 12px;
+}
+
+.contact-form{
+  display: flex;
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 5px solid #FFFFFF;;
+  padding: 10px;
+  color:#000000;;
+  width: 100%;
+}
+
+.msg textarea{
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color:#FFFFFF;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color:#FFFFFF;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color:#FFFFFF;
+}
+
+
+    .btn {
+    background: #75FF70;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 30px;
+    width: 50%;
+    
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+    .btn{
+  float:right;
+  width: 25%;
+  }
+}
+</style>
+<body>
+<div class="wrapper">
+<h1>Contact Us</h1>
+			<div class="content">
+				<ul>
+            <li>Phone: <a href="tel:+1-850-433-3308" data-content="+1-850-433-3308" data-type="phone">850-433-3308</a></li>
+            <li>Address: 205 S Baylen St.Pensacola, FL 32502</li>
+            <li>Email: <a href="mailto:info@headhunterhairstyling.com" target="_self" data-content="info@headhunterhairstyling.com" data-type="mail">info@headhunterhairstyling.com</a></li>	
+   				</ul>  
+			</div>
+  <div class="title">
+    <h2>Message Us Now!!</h2>
+  </div>
+  <div class="contact-form">
+  
+    <div class="input-fields">
+      <input type="text" class="input" placeholder="Name">
+      <input type="text" class="input" placeholder="Email Address">
+      <input type="text" class="input" placeholder="Phone">
+      <input type="text" class="input" placeholder="Subject">
+    </div>
+    <div class="msg">
+      <textarea placeholder="Message"></textarea>
+      <div class="btn">send</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
